@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/payment.css">
+    <link rel="stylesheet" href="../CSS/nav1.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <title>Payment-Travel Tribe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                   
+          </button>
+                <a class="navbar-brand" href="home.html" style="font-weight: bold;font-family: 'Piedra', cursive;">Travel Tribe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="w" href="gallery.html">Gallery</a></li>
+                    <li><a class="w" href="../index.html" onclick="alert('you are about to logout.click OK to Continue')">Logout <span class="glyphicon glyphicon-log-out"></span></a></li>
+                    <li style="margin: 0.8rem 0.8rem auto 0.3rem; background:#4caf50;"><button class="btn btn-success navbar-btn" onclick="history.back();">Return</button></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <header>
+    <div class="container">
+        <div class="left">
+            <h3>BILLING ADDRESS</h3>
+                <form>
+                    Full Name 
+                    <input type="text" name="" placeholder="Enter Name">
+                    Email
+                    <input type="text" name="" placeholder="Enter e-mail">
+                    Address
+                    <input type="text" name="" placeholder="Enter address">
+                    City
+                    <input type="text" name="" placeholder="Enter City">
+                    <div id="zip">
+                        <label for="">
+                             state
+                             <select >
+                                <option value="">Choose State</option>
+                                <option value="">Rajasthan</option>
+                                <option value="">Haryana</option>
+                                <option value="">Uttar Pradesh</option>
+                                <option value="">Madhya Pradesh</option>
+                             </select>
+                        </label>
+                        <label for="">
+                            Zip Code 
+                            <input type="number" name="" placeholder="Zip Code">
+                        </label>
+                    </div>
+                </form>
+        </div>
+        <div class="right">
+            <h3>PAYMENT </h3>
+            <form>
+                Accepted Card
+                <br>
+                <img src="image/card1.png" width="100">
+                <img src="image/card2.png" width="50">
+                <br>
+                <br>
+                Credit Card Number
+                <input type="text" name="" placeholder="Enter Card Number">
+                Exp Month
+                <input type="text" name="" placeholder="Enter Month">
+                <div id="zip">
+                    <label for="">
+                        Exp Year
+                         <select >
+                            <option value="">Choose Year</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                            <option value="">2027</option>
+                         </select>
+                    </label>
+                    <label for="">
+                        CVV 
+                        <input type="number" name="" placeholder="CVV">
+                    </label>
+                </div>
+            </form>
+            <input type="submit" name value="Proceed To Checkout">
+        </div>
+    </div>
+</header>
+<div id="foot"></div>
+    <script>
+        $(document).ready(function() {
+
+            $('#foot').load("HTML/footer.html");
+
+        });
+    </script>
+</body>
+</html>
